@@ -10,26 +10,6 @@ for key in theCell:
     cell_keys.append(key)
 
 
-def printCell(cell):
-    cell1 = "1" if cell['1'] == " " else cell['1']
-    cell2 = "2" if cell['2'] == " " else cell['2']
-    cell3 = "3" if cell['3'] == " " else cell['3']
-    cell4 = "4" if cell['4'] == " " else cell['4']
-    cell5 = "5" if cell['5'] == " " else cell['5']
-    cell6 = "6" if cell['6'] == " " else cell['6']
-    cell7 = "7" if cell['7'] == " " else cell['7']
-    cell8 = "8" if cell['8'] == " " else cell['8']
-    cell9 = "9" if cell['9'] == " " else cell['9']
-
-    print('\n┌─┬─┬─┐')
-    print(f"│{cell1}│{cell2}│{cell3}│")
-    print('├─┼─┼─┤')
-    print(f"│{cell4}│{cell5}│{cell6}│")
-    print('├─┼─┼─┤')
-    print(f"│{cell7}│{cell8}│{cell9}│")
-    print('└─┴─┴─┘')
-
-
 def main():
 
     turn = 'X'
@@ -105,6 +85,26 @@ def main():
             theCell[key] = " "
 
         main()
+
+
+def printCell(cell):
+    cell1 = "1" if cell['1'] == " " else cell['1']
+    cell2 = "2" if cell['2'] == " " else cell['2']
+    cell3 = "3" if cell['3'] == " " else cell['3']
+    cell4 = "4" if cell['4'] == " " else cell['4']
+    cell5 = "5" if cell['5'] == " " else cell['5']
+    cell6 = "6" if cell['6'] == " " else cell['6']
+    cell7 = "7" if cell['7'] == " " else cell['7']
+    cell8 = "8" if cell['8'] == " " else cell['8']
+    cell9 = "9" if cell['9'] == " " else cell['9']
+
+    print('\n┌─┬─┬─┐')
+    print(f"│{cell1}│{cell2}│{cell3}│")
+    print('├─┼─┼─┤')
+    print(f"│{cell4}│{cell5}│{cell6}│")
+    print('├─┼─┼─┤')
+    print(f"│{cell7}│{cell8}│{cell9}│")
+    print('└─┴─┴─┘')
 
 
 if __name__ == "__main__":
