@@ -106,7 +106,7 @@ class Director:
         if not self.is_playing:
             return
 
-        self.message = f"~Result~The next card is: {self.cards[0].value}~Your score is: {self.score}"
+        self.message = f"~Result~The next card is: {self.cards[1].value}~Your score is: {self.score}"
         self.dialog()
         print()
 
